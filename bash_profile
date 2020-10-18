@@ -1,5 +1,17 @@
-# Add `~/bin` to the `$PATH`
-export PATH="$HOME/bin:$PATH";
+# Set local binary paths if they exist
+if [[ -z $TMUX ]]; then
+	if [ -d "$HOME/bin" ] ; then
+		PATH="$HOME/bin:$PATH"
+	fi
+
+	if [ -d "$HOME/.local/bin" ] ; then
+		PATH="$HOME/.local/bin:$PATH"
+	fi
+
+	if which ruby >/dev/null && which gem >/dev/null; then
+		PATH="$(ruby -r rubygems -e 'puts Gem.user_dir')/bin:$PATH"
+	fi
+fi
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.

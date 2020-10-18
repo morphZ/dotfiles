@@ -11,6 +11,7 @@
     ~/.bash_prompt: bash_prompt
     ~/.bashrc: bashrc
     ~/.exports: exports
+    ~/.gitconfig: gitconfig
 
 - create:
     - ~/downloads
