@@ -1,6 +1,7 @@
 - defaults:
     link:
       relink: true
+      create: true
 
 - clean: ['~']
 
@@ -12,6 +13,7 @@
     ~/.bashrc: bashrc
     ~/.exports: exports
     ~/.gitconfig: gitconfig
+    ~/.config/nvim/init.vim: config/nvim/init.vim
 
 - create:
     - ~/downloads
