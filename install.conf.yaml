@@ -14,6 +14,7 @@
     ~/.exports: exports
     ~/.gitconfig: gitconfig
     ~/.config/nvim/init.vim: config/nvim/init.vim
+    ~/.config/flake8: config/flake8
 
 - create:
     - ~/downloads
