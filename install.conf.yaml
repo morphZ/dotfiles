@@ -6,14 +6,15 @@
 - clean: ['~']
 
 - link:
-    ~/.tmux.conf: tmux.conf
     ~/.aliases: aliases
     ~/.bash_profile: bash_profile
     ~/.bash_prompt: bash_prompt
     ~/.bashrc: bashrc
+    ~/.config/nvim/init.vim: config/nvim/init.vim
     ~/.exports: exports
     ~/.gitconfig: gitconfig
-    ~/.config/nvim/init.vim: config/nvim/init.vim
+    ~/.inputrc: inputrc
+    ~/.tmux.conf: tmux.conf
 
 - create:
     - ~/downloads
