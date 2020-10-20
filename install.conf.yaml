@@ -10,6 +10,7 @@
     ~/.bash_profile: bash_profile
     ~/.bash_prompt: bash_prompt
     ~/.bashrc: bashrc
+    ~/.config/flake8: config/flake8
     ~/.config/nvim/init.vim: config/nvim/init.vim
     ~/.exports: exports
     ~/.gitconfig: gitconfig
