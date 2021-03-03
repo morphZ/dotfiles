@@ -20,9 +20,6 @@ export HISTFILESIZE="${HISTSIZE}";
 # Omit duplicates and commands that begin with a space from history.
 export HISTCONTROL='ignoreboth';
 
-# Prefer US English and use UTF-8.
-export LANG='de_DE.UTF-8';
-
 # Highlight section titles in manual pages.
 export LESS_TERMCAP_md="${yellow}";
 
