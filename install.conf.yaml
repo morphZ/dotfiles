@@ -16,6 +16,7 @@
     ~/.gitconfig: gitconfig
     ~/.inputrc: inputrc
     ~/.tmux.conf: tmux.conf
+    ~/.vimrc: vimrc
 
 - create:
     - ~/downloads
