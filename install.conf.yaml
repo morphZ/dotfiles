@@ -9,7 +9,9 @@
     ~/.aliases: aliases
     ~/.bash_profile: bash_profile
     ~/.bash_prompt: bash_prompt
-    ~/.bashrc: bashrc
+    ~/.bashrc:
+        path: bashrc
+        force: yes
     ~/.config/flake8: config/flake8
     ~/.config/nvim/init.vim: config/nvim/init.vim
     ~/.exports: exports
