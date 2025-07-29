@@ -1,5 +1,4 @@
 [user]
-	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICkDTjE42qPyfrvrKQITurUsGzpoG+dE4DnT+Pgd9m/a
 	# These values are set in ~/.gitconfig_user
 
 [include]
@@ -132,8 +131,6 @@
 	untracked = cyan
 
 [commit]
-	gpgSign = true
-
 	# https://help.github.com/articles/signing-commits-using-gpg/
 	# gpgsign = true
 

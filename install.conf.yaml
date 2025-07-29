@@ -7,13 +7,14 @@
 
 - link:
     ~/.aliases: aliases
-    ~/.bash_profile: bash_profile
+    ~/.profile:
+        path: profile
+        force: yes
     ~/.bash_prompt: bash_prompt
     ~/.bashrc:
         path: bashrc
         force: yes
     ~/.config/flake8: config/flake8
-    ~/.config/nvim/init.vim: config/nvim/init.vim
     ~/.exports: exports
     ~/.gitconfig: gitconfig
     ~/.gitignore: gitignore

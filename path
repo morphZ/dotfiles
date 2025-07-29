@@ -1,0 +1,19 @@
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
+
+if [ -d "$HOME/.local/bin" ] ; then
+    PATH="$HOME/.local/bin:$PATH"
+fi
+
+if which ruby >/dev/null 2>&1 && which gem >/dev/null 2>&1 ; then
+    PATH="$(ruby -r rubygems -e 'puts Gem.user_dir')/bin:$PATH"
+fi
+
+if [ -d "$HOME/.local/npm/bin" ] ; then
+    PATH="$HOME/.local/npm/bin:$PATH"
+fi
+
+if [ -d "$HOME/.cargo/env" ] ; then
+    PATH="$HOME/.cargo/env:$PATH"
+fi
