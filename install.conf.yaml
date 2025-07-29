@@ -16,6 +16,7 @@
     ~/.config/nvim/init.vim: config/nvim/init.vim
     ~/.exports: exports
     ~/.gitconfig: gitconfig
+    ~/.gitignore: gitignore
     ~/.inputrc: inputrc
     ~/.tmux.conf: tmux.conf
     ~/.vimrc: vimrc
