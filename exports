@@ -1,4 +1,7 @@
-#!/usr/bin/env bash
+# Set terminal type for better color support
+if infocmp xterm-256color >/dev/null 2>&1; then
+	export TERM='xterm-256color';
+fi;
 
 # Make vim the default editor.
 export EDITOR='vim';

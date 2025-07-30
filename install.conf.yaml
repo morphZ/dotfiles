@@ -14,11 +14,11 @@
     ~/.bashrc:
         path: bashrc
         force: yes
-    ~/.config/flake8: config/flake8
     ~/.exports: exports
     ~/.gitconfig: gitconfig
     ~/.gitignore: gitignore
     ~/.inputrc: inputrc
+    ~/.path: path
     ~/.tmux.conf: tmux.conf
     ~/.vimrc: vimrc
 
