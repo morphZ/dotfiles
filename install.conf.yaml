@@ -21,7 +21,9 @@
     ~/.path: path
     ~/.tmux.conf: tmux.conf
     ~/.vimrc: vimrc
+    ~/.config/starship.toml: starship.toml
 
 - create:
     - ~/downloads
     - ~/.vim/undo-history
+    - ~/.config

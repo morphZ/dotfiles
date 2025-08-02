@@ -13,6 +13,11 @@ if command -v direnv >/dev/null 2>&1; then
 	eval "$(direnv hook bash)";
 fi;
 
+# Initialize starship prompt if available
+if command -v starship >/dev/null 2>&1; then
+	eval "$(starship init bash)";
+fi;
+
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob;
 
@@ -41,3 +46,4 @@ fi;
 
 # Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
 [ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2- | tr ' ' '\n')" scp sftp ssh;
+
