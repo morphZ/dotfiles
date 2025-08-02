@@ -2,7 +2,7 @@
 # * ~/.bash_prompt for prompt customization
 # * ~/.aliases for command aliases  
 # * ~/.functions for shell functions
-# * ~/.bash_local for local bash-specific settings
+# * ~/.bashrc_local for local bash-specific settings
 for file in ~/.{bash_prompt,aliases,functions,bashrc_local}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
