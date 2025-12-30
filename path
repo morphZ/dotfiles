@@ -13,7 +13,3 @@ fi
 if [ -d "$HOME/.local/npm/bin" ] ; then
     PATH="$HOME/.local/npm/bin:$PATH"
 fi
-
-if [ -d "$HOME/.cargo/env" ] ; then
-    PATH="$HOME/.cargo/env:$PATH"
-fi
