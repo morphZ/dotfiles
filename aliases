@@ -55,3 +55,6 @@ alias reload='exec /bin/bash -l'
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
 alias pn=pnpm
+
+# Claude Code with bypass permissions (skips all permission prompts)
+alias cl='claude --dangerously-skip-permissions'
