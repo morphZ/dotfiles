@@ -13,3 +13,9 @@ fi
 if [ -d "$HOME/.local/npm/bin" ] ; then
     PATH="$HOME/.local/npm/bin:$PATH"
 fi
+
+# pnpm global bin (pnpm add -g)
+export PNPM_HOME="$HOME/.local/share/pnpm"
+if [ -d "$PNPM_HOME/bin" ] ; then
+    PATH="$PNPM_HOME/bin:$PATH"
+fi

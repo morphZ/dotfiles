@@ -3,7 +3,7 @@
 # * ~/.aliases for command aliases  
 # * ~/.functions for shell functions
 # * ~/.bashrc_local for local bash-specific settings
-for file in ~/.{bash_prompt,aliases,functions,bashrc_local}; do
+for file in ~/.{exports,bash_prompt,aliases,functions,bashrc_local}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
@@ -50,3 +50,4 @@ fi;
 
 # Load nvm from dotfiles (keeps rc edits centralized)
 [ -f "$HOME/dotfiles/nvm.sh" ] && . "$HOME/dotfiles/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

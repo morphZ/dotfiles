@@ -28,3 +28,8 @@ export LESS_TERMCAP_md="${yellow}";
 
 # Don’t clear the screen after quitting a manual page.
 export MANPAGER='less -X';
+
+# Claude Code long-lived OAuth token (file is 0600, outside the repo).
+if [ -r ~/.config/claude/token ]; then
+	export CLAUDE_CODE_OAUTH_TOKEN="$(< ~/.config/claude/token)";
+fi;
